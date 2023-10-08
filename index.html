@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0662b3ec0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/log.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#porfolio">Porfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Nader</span> <br> Bessioud from Tunisia</h1>
+            </div>
+
+        </div>
+
+    </div>
+<!--------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profil.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a Financial Engineering student at Esprit (Tunisia),  I bring a unique blend of technical expertise and financial acumen to the table.
+                        With a strong background in financial mathematics, financial markets, and Actuarial Science (Life and Non-Life insurance), I'm passionate about utilizing my skills to develop innovative solutions for clients.
+                        <br>Proficient in Spring Boot, Angular, and Python, i'm committed to staying ahead of the curve in the constantly evolving world of IT.
+                        <br>When i'm not busy pursuing my academic and professional goals, I love to participate in hackathons
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>key skills</span>
+                                <br>Actuarial Science: Life and Non-life Insurance
+                                <br>Finance: Financial Mathematics, Financial Markets</li>
+                            <li><span>Programming</span>
+                                <br>Java/Spring boot, Angular, .Net, C++, HTML/CSS, JavaScript, Python
+                            </li>
+                            <li><span>Operating Systems</span>
+                                <br>Linux, Windows</li>
+                            <li><span>Languages</span>
+                                <br>Arabic, French, English</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>01/2018-02/2018</span><br>Internship- Banking Union for Commerce and Industry(UBCI) Tunisia
+                                <ul class="details">
+                                    <li>Tasks performed: Maintenance and repair of computer hardware, remote services, assistance, and technical support</li>
+                                </ul>
+                            </li>
+                            <li><span>01/2019-02/2019</span><br>Internship- National Company for the Exploitation and Distribution of Water(SONEDE) Tunisia
+                                <ul class="details">
+                                    <li>Tasks performed: Creating a mobile application for task management (TO-DO List)</li>
+                                </ul>
+                            </li>
+                            <li><span>02/2020-06/2020</span><br>graduation project- MEDIANET Tunisia
+                                <ul class="details">
+                                    <li>Tasks accomplished: Developing a web/mobile application for processing online accident reports</li>
+                                    <li>Languages used: Angular/Spring Boot/Kotlin</li>
+                                </ul>
+                            </li>
+                            <li><span>07/2022-09/2022</span><br>Internship- Private Higher School of Engineering and Technologies(Esprit) Tunisia
+                                <ul class="details">
+                                    <li>Tasks accomplished: Establishment of a collaborative platform, EspritHub, for the resolution of technical bugs</li>
+                                    <li>Languages used: Angular/Spring Boot/Python</li>
+                                </ul>
+                            </li>
+                            <li><span>12/2023-01/2023</span><br>Internship- Private Higher School of Engineering and Technologies(Esprit) Tunisia
+                                <ul class="details">
+                                    <li>Tasks accomplished: Redesign and Deployment of the ‘Esprit Hub’ web application</li>
+                                    <li>Docker, Jenkins, Sonar, nexus</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>09/2014-06/2017</span><br>Student- Mohamed el Arbi Chamari High School Tunisia
+                                <ul class="details">
+                                    <li>Baccalaureate in Mathematics - with honors</li>
+                                </ul>
+                            </li>
+                            <li><span>09/2017-06/2020</span><br>Student- Higher Institute of Technological Studies of Rades Tunisia
+                                <ul class="details">
+                                    <li>Specialty Information Systems Development | Final Project with Highest Honors</li>
+                                </ul>
+                            </li>
+                            <li><span>09/2020-Current</span><br>Student- Private Higher School of Engineering and Technologies(Esprit) Tunisia
+                                <ul class="details">
+                                    <li>Financial Computing and Engineering specialization</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------Service-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Proficient in Spring Boot, Angular, and Python</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>mobile Developement</h2>
+                    <p>I'm an Android developer</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Actuariat and Finance</h2>
+                    <p>I'm an engineer specializing in financial mathematics, financial markets, and Actuarial Science (Life and Non-Life insurance)</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Porfolio-------------->
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/crotun.png" >
+                    <div class="layer">
+                        <h3>CROTUN</h3>
+                        <p>It's a user-friendly web application for Microfinance with
+                            Various payment methods will be present in the application such as online payment, scanning a receipt or
+                                a check and the ability to buy a credit card from one of our partnered sales centers</p>
+                        <a target="_blank" href="https://github.com/NaderBessioud/CROTUN"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="margin-top: 30px" src="images/bonline.png">
+                    <div class="layer">
+                        <h3>Online Bank</h3>
+                        <p>This is a web application that provides customers with the ability to book appointments
+                            with staff and efficiently manage their accounts and banking transactions,
+                            including transfers and bank card management, all without the need for physical visits.
+
+                            <br>Additionally, customers can apply for loans and purchase life insurance directly through our app. They also have the option to invest their funds within the application by creating and managing their portfolio, which includes various financial products like bonds and stocks</p>
+                        <a target="_blank" href="https://github.com/NaderBessioud/Bank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="margin-top: 30px" src="images/signTrans.png" >
+                    <div class="layer">
+                        <h3>Sign language detector</h3>
+                        <p>It's a web application that detects sign language and gestures in real-time and translates them into sentences.
+                            <br>The application utilizes a trained model within the frame provided by the user for each action or sign, using LSTM and TensorFlow.</p>
+                        <a target="_blank" href="https://github.com/NaderBessioud/SignLanguageTranslator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------Contact-------------->
+    <div id="contact">
+        <div class="container">
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nader.bessioud@esprit.tn</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>+21629658549</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/BessioudNader"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/naderbessioud/?hl=fr"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/nader-bessioud/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/NaderBessioud"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a    href="images/my_CV.pdf" download="cv" target="_blank" class="btn btn2" onclick="downloadf('my_CV.pdf','cv')">Curriculum Vitae</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nader.@2023 </p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzknH0XnEsREsrWYefzZHv-5B5yyy-bxrhcic6zfJYHv9Y4cwmjAv-rh5xsiCcxQmeB/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{
+                 msg.innerHTML="Message sent successfuly";
+                 setTimeout(function (){
+                     msg.innerHTML = ""
+                 }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+</script>
+
+
+
+</body>
+</html>
